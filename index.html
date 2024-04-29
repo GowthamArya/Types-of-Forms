@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20 Types of Forms</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .form-group {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="d-flex justify-content-center mt-5 title">Types of Forms</h1>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <form action="#" method="POST">
+          <div class="form-group">
+              <h1 class="d-flex justify-content-center mb-5">1.Login Form</h1>
+              <label for="userName">Username</label>
+              <input type="text" class="form-control mb-3" id="userName">
+              <label for="passward">Password</label>
+              <input type="text" class="form-control mb-3" id="passward">
+              <input class="form-check-input ml-2" type="checkbox" id="save">
+              <label class="form-check-label ml-4" for="save">Save Login Info</label>
+              <input class="btn btn-primary form-control mt-3" type="submit" value="Login">
+              <p class="d-flex justify-content-center my-2"><a class="link-underline-primary" href="#">Forgot Password?</a></p>
+          </div>
+      </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <form action="#" method="POST">
+        <div class="form-group">
+            <h1 class="d-flex justify-content-center mb-5">2.SignUp Form</h1>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+              <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+            </div>
+            <input class="form-control mb-3" placeholder="Email address" id="emailSignUp" type="email">
+            <input class="form-control mb-3" placeholder="Password"  type="passwordSignUp" id="Password">
+            <input class="form-check-input ml-2 mb-3" type="checkbox" id="agreeSignUp">
+            <label class="form-check-label ml-4 mb-3" for="agreeSignUp">I agree with terms and conditions</label>
+            <input class="btn btn-primary form-control my-3" type="submit" value="Sign Up">
+            <div class="d-flex justify-content-center my-3">
+                <span class="m-1">Already have an account? </span>
+                <button class="btn btn-secondary px-2 py-1" placeholder="Login" type="button">Login</button>
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <form action="#" method="POST">
+        <div class="form-group">
+            <h1 class="d-flex justify-content-center mb-5">3.Registration Form</h1>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+              <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+            </div>
+            <input class="form-control mb-3" placeholder="Email address" id="emailRegistration" type="email">
+            <div class="form-check mb-3">
+                <span>Gender : </span>
+                <input class="form-check-input ml-1 mt-2" type="radio" name="gender" id="gender1" value="option1">
+                <label class="form-check-label  ml-4" for="gender1">Male</label>
+                <input class="form-check-input ml-1 mt-2" type="radio" name="gender" id="gender2" value="option2">
+                <label class="form-check-label ml-4" for="gender2">Female</label>
+                <input class="form-check-input ml-1 mt-2" type="radio" name="gender" id="gender3" value="option2">
+                <label class="form-check-label ml-4" for="gender3">Other</label>
+            </div>
+            <div class="input-group mb-3">
+                <select class="form-select form-control" aria-label="Small select example">
+                    <option selected>Select Country</option>
+                    <option value="1">India</option>
+                    <option value="2">China</option>
+                    <option value="3">England</option>
+                </select>
+                <input class="form-control mb-3" placeholder="Contact Number" id="number" type="number">
+            </div>
+            <input class="form-check-input ml-2 mb-3" type="checkbox" id="agree">
+            <label class="form-check-label ml-4 mb-3" for="agree">I agree with terms and conditions</label>
+            <input class="btn btn-primary form-control my-3" type="submit" value="Sign Up">
+            <div class="d-flex justify-content-center my-3">
+                <span class="m-1">Already have an account? </span>
+                <button class="btn btn-secondary px-2 py-1" placeholder="Login" type="button">Login</button>
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+        <h1 class="d-flex justify-content-center mb-5">4.Feedback Form</h1 class="">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nameFeedback">Your Name:</label>
+            <input type="text" class="form-control" id="nameFeedback" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="emailFeedback">Email address:</label>
+            <input type="email" class="form-control" id="emailFeedback" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea class="form-control" id="feedback" name="feedback" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-control mt-3">Submit</button>
+        </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+        <h1 class="d-flex justify-content-center mb-5">5.Contact Form</h1>
+        <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="emailContact">Email</label>
+              <input type="email" id="emailContact" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="messageContact">Message</label>
+              <textarea id="messageContact" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-control mt-3">Submit</button>
+        </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+        <h1 class="d-flex justify-content-center mb-5">6.Payment Details</h1>
+        <form>
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" class="form-control" placeholder="1234 5678 9012 3456">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="expiryDate">Expiry Date</label>
+              <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" class="form-control" placeholder="123">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nameOnCard">Name on Card</label>
+            <input type="text" id="nameOnCard" class="form-control" placeholder="John Doe">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Pay Now</button>
+        </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+        <h1 class="d-flex justify-content-center mb-5">7.Address Details</h1>
+        <form>
+            <div class="form-group">
+                <label for="fullNameAddress">Full Name</label>
+                <input type="text" id="fullNameAddress" class="form-control" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="addressLine1">Address Line 1</label>
+                <input type="text" id="addressLine1" class="form-control" placeholder="123 Main St">
+            </div>
+            <div class="form-group">
+                <label for="addressLine2">Address Line 2</label>
+                <input type="text" id="addressLine2" class="form-control" placeholder="Apt 101">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" id="city" class="form-control" placeholder="Anytown">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <input type="text" id="state" class="form-control" placeholder="State">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" class="form-control" placeholder="Zip">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" class="form-control" placeholder="Country">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Address</button>
+        </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+        <h1 class="d-flex justify-content-center mb-5">8.Enquiry Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="fullNameEnquiry">Full Name</label>
+                <input type="text" id="fullNameEnquiry" class="form-control" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="emailEnquiry">Email</label>
+                <input type="email" id="emailEnquiry" class="form-control" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" class="form-control" placeholder="123-456-7890">
+            </div>
+            <div class="form-group">
+                <label for="messageEnquiry">Message</label>
+                <textarea id="messageEnquiry" class="form-control" rows="5" placeholder="Type your message here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+        </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+        <h1 class="d-flex justify-content-center mb-5">9.Social Media Post</h1>
+        <form>
+            <div class="form-group">
+                <label for="caption">Caption</label>
+                <textarea id="caption" class="form-control" rows="3" placeholder="Write your caption here"></textarea>
+                <label for="file">Upload Video or Image</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="file">
+                    <label class="custom-file-label" for="file">Choose file</label>
+                </div>
+                <small class="form-text text-muted">Max file size: 10MB</small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Post</button>
+        </form>
+    </div>
+    
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <h1 class="d-flex justify-content-center mb-5">10.Make a Donation</h1>
+      <form>
+          <div class="form-group">
+              <label for="fullNameDonation">Full Name</label>
+              <input type="text" id="fullNameDonation" class="form-control" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+              <label for="emailDonation">Email</label>
+              <input type="email" id="emailDonation" class="form-control" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+              <label for="amountDonation">Donation Amount ($)</label>
+              <input type="number" id="amountDonation" class="form-control" placeholder="Enter amount">
+          </div>
+          <div class="form-group">
+              <label for="messageDonation">Message (Optional)</label>
+              <textarea id="messageDonation" class="form-control" rows="3" placeholder="Write a message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Donate</button>
+      </form>
+    </div>
+  
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <h1 class="d-flex justify-content-center mb-5">11.Event Registration</h1>
+      <form>
+          <div class="form-group">
+              <label for="fullNameEvent">Full Name</label>
+              <input type="text" id="fullNameEvent" class="form-control" placeholder="John Doe">
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label for="emailEvent">Email</label>
+                  <input type="email" id="emailEvent" class="form-control" placeholder="john@example.com">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="phoneNumberEvent">Phone Number</label>
+                  <input type="tel" id="phoneNumberEvent" class="form-control" placeholder="123-456-7890">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="event">Select Event</label>
+              <select id="event" class="form-control">
+                  <option value="event1">Event 1</option>
+                  <option value="event2">Event 2</option>
+                  <option value="event3">Event 3</option>
+              </select>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label for="birthdate">Date of Birth</label>
+                  <input type="date" id="birthdate" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="ageEvent">Age</label>
+                  <input type="number" id="ageEvent" class="form-control" placeholder="Age">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="gender">Gender</label>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                  <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                  <label class="form-check-label" for="female">Female</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                  <label class="form-check-label" for="other">Other</label>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="amount">Donation Amount</label>
+              <input type="range" id="amount" class="form-control-range" min="0" max="1000" step="10">
+          </div>
+          <div class="form-group">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" class="form-control" rows="3" placeholder="Write a message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+      </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <h1 class="d-flex justify-content-center mb-5">12.Job Application Form</h1>
+      <form>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label for="fullNameJob">Full Name</label>
+                  <input type="text" id="fullNameJob" class="form-control" placeholder="John Doe">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="emailJob">Email</label>
+                  <input type="email" id="emailJob" class="form-control" placeholder="john@example.com">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" id="phoneNumber" class="form-control" placeholder="123-456-7890">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="linkedin">LinkedIn Profile (Optional)</label>
+                  <input type="text" id="linkedin" class="form-control" placeholder="https://www.linkedin.com/in/yourprofile">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="resume">Upload Resume</label>
+              <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="resume">
+                  <label class="custom-file-label" for="resume">Choose file</label>
+              </div>
+              <small class="form-text text-muted">Accepted file types: PDF, DOCX</small>
+          </div>
+          <div class="form-group">
+              <label for="position">Position Applying For</label>
+              <input type="text" id="position" class="form-control" placeholder="Software Engineer">
+          </div>
+          <div class="form-group">
+              <label for="coverLetter">Cover Letter (Optional)</label>
+              <textarea id="coverLetter" class="form-control" rows="5" placeholder="Write your cover letter here"></textarea>
+          </div>
+          <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="termsCheck">
+              <label class="form-check-label" for="termsCheck">I agree to the <a href="#">terms and conditions</a></label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+      </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <h1 class="d-flex justify-content-center mb-5">13.Survey Form</h1>
+        <form>
+          <div class="form-group">
+              <label for="fullNameSurvey">Full Name</label>
+              <input type="text" id="fullNameSurvey" class="form-control" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+              <label for="emailSurvey">Email</label>
+              <input type="email" id="emailSurvey" class="form-control" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" class="form-control" placeholder="Age">
+          </div>
+          <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" class="form-control">
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+              </select>
+          </div>
+          <hr>
+          <div class="form-group">
+              <label>What is your favorite programming language?</label>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="programmingLanguage" id="java" value="java">
+                  <label class="form-check-label" for="java">Java</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="programmingLanguage" id="python" value="python">
+                  <label class="form-check-label" for="python">Python</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="programmingLanguage" id="javascript" value="javascript">
+                  <label class="form-check-label" for="javascript">JavaScript</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="programmingLanguage" id="otherLanguage" value="other">
+                  <label class="form-check-label" for="otherLanguage">Other</label>
+              </div>
+          </div>
+          <hr>
+          <div class="form-group">
+              <label for="experience">How many years of experience do you have in programming?</label>
+              <input type="number" id="experience" class="form-control" placeholder="Years of Experience">
+          </div>
+          <hr>
+          <div class="form-group">
+              <label for="satisfaction">How satisfied are you with your current job?</label>
+              <select id="satisfaction" class="form-control">
+                  <option value="">Select</option>
+                  <option value="veryUnsatisfied">Very Unsatisfied</option>
+                  <option value="unsatisfied">Unsatisfied</option>
+                  <option value="neutral">Neutral</option>
+                  <option value="satisfied">Satisfied</option>
+                  <option value="verySatisfied">Very Satisfied</option>
+              </select>
+          </div>
+          <hr>
+          <div class="form-group">
+              <label for="comments">Comments (Optional)</label>
+              <textarea id="comments" class="form-control" rows="5" placeholder="Any additional comments"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <h1 class="d-flex justify-content-center mb-5">14.Email Subscription Form</h1>
+      <form>
+          <div class="form-group">
+              <label for="fullNameSubscription">Full Name</label>
+              <input type="text" id="fullNameSubscription" class="form-control" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+              <label for="emailSubscription">Email</label>
+              <input type="email" id="emailSubscription" class="form-control" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+              <label>Choose your interests:</label>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="interest1" value="option1">
+                  <label class="form-check-label" for="interest1">Technology</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="interest2" value="option2">
+                  <label class="form-check-label" for="interest2">Travel</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="interest3" value="option3">
+                  <label class="form-check-label" for="interest3">Food</label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="interest4" value="option4">
+                  <label class="form-check-label" for="interest4">Fashion</label>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+      </form>
+    </div>
+    
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <h1 class="d-flex justify-content-center mb-5">15.Reservation Form</h1>
+      <form>
+          <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" class="form-control" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="john@example.com">
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="time">Time</label>
+                  <input type="time" id="time" class="form-control">
+              </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Reserve</button>
+      </form>
+    </div>
+
+    <div class="border border-primary border-5 p-5 m-5 mx-10">
+      <h1 class="d-flex justify-content-center mb-5">16.Product Order Form</h1>
+      <form>
+          <div class="form-group">
+              <label for="productName">Product Name</label>
+              <input type="text" id="productName" class="form-control" placeholder="Product Name">
+          </div>
+          <div class="form-group">
+            <label for="productId">Product Id</label>
+            <input type="text" id="productId" class="form-control" placeholder="Product Id">
+          </div>
+          <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" class="form-control" min="1" value="1">
+          </div>
+          <div class="form-group">
+              <label for="shippingAddress">Shipping Address</label>
+              <textarea id="shippingAddress" class="form-control" rows="3" placeholder="Enter shipping address"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
